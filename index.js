@@ -19,4 +19,4 @@ const indexApp = connect();
 dupa.use(serveStatic('app'));
 app.use(vhost('145.239.91.188', indexApp));
 
-app.listen(3000);
+app.listen(80);
