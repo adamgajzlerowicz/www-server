@@ -8,7 +8,7 @@ dupa.use(serveStatic('dupa'));
 app.use(vhost('dupa.local', dupa));
 
 const czyjesttarta = connect();
-dupa.use(serveStatic('czyjesttarta.pl'));
+dupa.use(serveStatic('czyjesttarta.pl/public'));
 app.use(vhost('czyjesttarta.pl', czyjesttarta));
 
 const oktorejjestobiad = connect();
