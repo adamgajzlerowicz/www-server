@@ -16,7 +16,7 @@ oktorejjestobiad.use(serveStatic('oktorejjestobiad.pl'));
 app.use(vhost('oktorejjestobiad.pl', oktorejjestobiad));
 
 const indexApp = connect();
-indexApp.use(serveStatic('app'));
+indexApp.use(serveStatic('oktorejjestobiad-graphql/docs'));
 app.use(vhost('145.239.91.188', indexApp));
 
 app.listen(80);
