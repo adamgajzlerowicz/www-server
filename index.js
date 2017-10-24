@@ -9,6 +9,7 @@ var app = connect();
 
 const oktorejjestobiad = connect();
 oktorejjestobiad.use(serveStatic('websites/oktorejjestobiad.pl'));
+app.use(vhost('www.oktorejjestobiad.pl', oktorejjestobiad));
 app.use(vhost('oktorejjestobiad.pl', oktorejjestobiad));
 
 const indexApp = connect();
